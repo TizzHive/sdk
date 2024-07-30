@@ -1,9 +1,9 @@
-# Gains Network SDK
+# Tizz Hive SDK
 
 ## Install
 
 ```bash
-npm install @gainsnetwork/sdk
+npm install @tizz-hive/sdk
 ```
 
 ## Usage
