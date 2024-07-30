@@ -1,6 +1,6 @@
 {
   "name": "@tizz-hive/sdk",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "The SDK of Tizz Trading Platform",
   "main": "./lib/src/index.js",
   "files": [
@@ -16,8 +16,7 @@
     "test": "jest --coverage",
     "typecheck": "tsc --noEmit",
     "generate-types": "typechain --target=ethers-v5 --out-dir ./src/contracts/types/generated ./abi/**/*.json",
-    "prepublishOnly": "npm run build",
-    "publish": "npm publish --access public"
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
