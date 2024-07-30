@@ -1,6 +1,6 @@
 {
   "name": "@tizz-hive/sdk",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "description": "The SDK of Tizz Trading Platform",
   "main": "./lib/src/index.js",
   "files": [
