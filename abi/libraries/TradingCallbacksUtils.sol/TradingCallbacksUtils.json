@@ -1,0 +1,504 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_openPrice",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_leverage",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_sl",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "_long",
+        "type": "bool"
+      }
+    ],
+    "name": "correctSl",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_openPrice",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_leverage",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_tp",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "_long",
+        "type": "bool"
+      }
+    ],
+    "name": "correctTp",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_openPrice",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_currentPrice",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "_long",
+        "type": "bool"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_leverage",
+        "type": "uint256"
+      }
+    ],
+    "name": "currentPercentProfit",
+    "outputs": [
+      {
+        "internalType": "int256",
+        "name": "p",
+        "type": "int256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "trader",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "pairIndex",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "index",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "initialPosToken",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "positionSizeBaseAsset",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "openPrice",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "buy",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "leverage",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tp",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "sl",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct ITizzTradingStorage.Trade",
+        "name": "_trade",
+        "type": "tuple"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_currentBaseAssetPos",
+        "type": "uint256"
+      },
+      {
+        "internalType": "int256",
+        "name": "_percentProfit",
+        "type": "int256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_closingFees",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint128",
+        "name": "_collateralPrecisionDelta",
+        "type": "uint128"
+      },
+      {
+        "internalType": "contract ITizzBorrowingFees",
+        "name": "_borrowingFees",
+        "type": "ITizzBorrowingFees"
+      }
+    ],
+    "name": "getTradeValue",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "value",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "borrowingFee",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_collateral",
+        "type": "uint256"
+      },
+      {
+        "internalType": "int256",
+        "name": "_percentProfit",
+        "type": "int256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_borrowingFee",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_closingFee",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint128",
+        "name": "_collateralPrecisionDelta",
+        "type": "uint128"
+      }
+    ],
+    "name": "getTradeValuePure",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "trader",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "pairIndex",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "index",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "initialPosToken",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "positionSizeBaseAsset",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "openPrice",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "buy",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "leverage",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tp",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "sl",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct ITizzTradingStorage.Trade",
+        "name": "_trade",
+        "type": "tuple"
+      }
+    ],
+    "name": "handleTradeSlTp",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_price",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_spreadP",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "_long",
+        "type": "bool"
+      }
+    ],
+    "name": "marketExecutionPrice",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "bool",
+            "name": "isPaused",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "executionPrice",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "wantedPrice",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "marketPrice",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "spreadP",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "buy",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint256",
+            "name": "pairIndex",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "positionSize",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "leverage",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maxSlippageP",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "tp",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "sl",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct ITizzTradingCallbacks.OpenTradePrepInput",
+        "name": "_input",
+        "type": "tuple"
+      },
+      {
+        "internalType": "contract ITizzBorrowingFees",
+        "name": "_borrowingFees",
+        "type": "ITizzBorrowingFees"
+      },
+      {
+        "internalType": "contract ITizzTradingStorage",
+        "name": "_storageT",
+        "type": "ITizzTradingStorage"
+      },
+      {
+        "internalType": "contract ITizzMultiCollatDiamond",
+        "name": "_multiCollatDiamond",
+        "type": "ITizzMultiCollatDiamond"
+      },
+      {
+        "internalType": "contract ITizzPriceAggregator",
+        "name": "_aggregator",
+        "type": "ITizzPriceAggregator"
+      }
+    ],
+    "name": "openTradePrep",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "priceImpactP",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "priceAfterImpact",
+        "type": "uint256"
+      },
+      {
+        "internalType": "enum ITizzTradingCallbacks.CancelReason",
+        "name": "cancelReason",
+        "type": "ITizzTradingCallbacks.CancelReason"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_pairIndex",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "_long",
+        "type": "bool"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_positionSizeBaseAsset",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_leverage",
+        "type": "uint256"
+      },
+      {
+        "internalType": "contract ITizzTradingStorage",
+        "name": "_storageT",
+        "type": "ITizzTradingStorage"
+      },
+      {
+        "internalType": "contract ITizzBorrowingFees",
+        "name": "_borrowingFees",
+        "type": "ITizzBorrowingFees"
+      }
+    ],
+    "name": "withinExposureLimits",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

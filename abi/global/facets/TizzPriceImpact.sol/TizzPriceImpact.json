@@ -1,0 +1,743 @@
+[
+  {
+    "inputs": [],
+    "name": "InitError",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "InvalidInputLength",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "NotAllowed",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "WrongAccess",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "WrongSlot",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "target",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "enum IAddressStoreUtils.Role",
+        "name": "role",
+        "type": "uint8"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "access",
+        "type": "bool"
+      }
+    ],
+    "name": "AccessControlUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "tizz",
+            "type": "address"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct IAddressStoreUtils.Addresses",
+        "name": "addresses",
+        "type": "tuple"
+      }
+    ],
+    "name": "AddressesUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint8",
+        "name": "version",
+        "type": "uint8"
+      }
+    ],
+    "name": "Initialized",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint48",
+        "name": "windowsDuration",
+        "type": "uint48"
+      },
+      {
+        "indexed": true,
+        "internalType": "uint48",
+        "name": "windowsCount",
+        "type": "uint48"
+      }
+    ],
+    "name": "OiWindowsSettingsInitialized",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "pairIndex",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint128",
+        "name": "valueAboveUsd",
+        "type": "uint128"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint128",
+        "name": "valueBelowUsd",
+        "type": "uint128"
+      }
+    ],
+    "name": "OnePercentDepthUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "pairIndex",
+        "type": "uint256"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint128",
+            "name": "oiLongUsd",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint128",
+            "name": "oiShortUsd",
+            "type": "uint128"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct IPriceImpactUtils.PairOi",
+        "name": "totalPairOi",
+        "type": "tuple"
+      }
+    ],
+    "name": "PriceImpactOiTransferredPair",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "pairsCount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "prevCurrentWindowId",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "prevEarliestWindowId",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "newCurrentWindowId",
+        "type": "uint256"
+      }
+    ],
+    "name": "PriceImpactOiTransferredPairs",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint48",
+            "name": "windowsDuration",
+            "type": "uint48"
+          },
+          {
+            "internalType": "uint256",
+            "name": "pairIndex",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "windowId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "long",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint128",
+            "name": "openInterestUsd",
+            "type": "uint128"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct IPriceImpactUtils.OiWindowUpdate",
+        "name": "oiWindowUpdate",
+        "type": "tuple"
+      }
+    ],
+    "name": "PriceImpactOpenInterestAdded",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint48",
+            "name": "windowsDuration",
+            "type": "uint48"
+          },
+          {
+            "internalType": "uint256",
+            "name": "pairIndex",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "windowId",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "long",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint128",
+            "name": "openInterestUsd",
+            "type": "uint128"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct IPriceImpactUtils.OiWindowUpdate",
+        "name": "oiWindowUpdate",
+        "type": "tuple"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "notOutdated",
+        "type": "bool"
+      }
+    ],
+    "name": "PriceImpactOpenInterestRemoved",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint48",
+        "name": "windowsCount",
+        "type": "uint48"
+      }
+    ],
+    "name": "PriceImpactWindowsCountUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint48",
+        "name": "windowsDuration",
+        "type": "uint48"
+      }
+    ],
+    "name": "PriceImpactWindowsDurationUpdated",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_openInterestUsd",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_pairIndex",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "_long",
+        "type": "bool"
+      }
+    ],
+    "name": "addPriceImpactOpenInterest",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getAddresses",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "tizz",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct IAddressStoreUtils.Addresses",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint48",
+        "name": "_windowsDuration",
+        "type": "uint48"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_pairIndex",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_windowId",
+        "type": "uint256"
+      }
+    ],
+    "name": "getOiWindow",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint128",
+            "name": "oiLongUsd",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint128",
+            "name": "oiShortUsd",
+            "type": "uint128"
+          }
+        ],
+        "internalType": "struct IPriceImpactUtils.PairOi",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint48",
+        "name": "_windowsDuration",
+        "type": "uint48"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_pairIndex",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "_windowIds",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "getOiWindows",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint128",
+            "name": "oiLongUsd",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint128",
+            "name": "oiShortUsd",
+            "type": "uint128"
+          }
+        ],
+        "internalType": "struct IPriceImpactUtils.PairOi[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getOiWindowsSettings",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint48",
+            "name": "startTs",
+            "type": "uint48"
+          },
+          {
+            "internalType": "uint48",
+            "name": "windowsDuration",
+            "type": "uint48"
+          },
+          {
+            "internalType": "uint48",
+            "name": "windowsCount",
+            "type": "uint48"
+          }
+        ],
+        "internalType": "struct IPriceImpactUtils.OiWindowsSettings",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_pairIndex",
+        "type": "uint256"
+      }
+    ],
+    "name": "getPairDepth",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint128",
+            "name": "onePercentDepthAboveUsd",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint128",
+            "name": "onePercentDepthBelowUsd",
+            "type": "uint128"
+          }
+        ],
+        "internalType": "struct IPriceImpactUtils.PairDepth",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "_indices",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "getPairDepths",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "uint128",
+            "name": "onePercentDepthAboveUsd",
+            "type": "uint128"
+          },
+          {
+            "internalType": "uint128",
+            "name": "onePercentDepthBelowUsd",
+            "type": "uint128"
+          }
+        ],
+        "internalType": "struct IPriceImpactUtils.PairDepth[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_pairIndex",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "_long",
+        "type": "bool"
+      }
+    ],
+    "name": "getPriceImpactOi",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "activeOi",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_openPrice",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_pairIndex",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "_long",
+        "type": "bool"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_tradeOpenInterestUsd",
+        "type": "uint256"
+      }
+    ],
+    "name": "getTradePriceImpact",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "priceImpactP",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "priceAfterImpact",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_account",
+        "type": "address"
+      },
+      {
+        "internalType": "enum IAddressStoreUtils.Role",
+        "name": "_role",
+        "type": "uint8"
+      }
+    ],
+    "name": "hasRole",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_rolesManager",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_tizz",
+        "type": "address"
+      }
+    ],
+    "name": "initialize",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint48",
+        "name": "_windowsDuration",
+        "type": "uint48"
+      },
+      {
+        "internalType": "uint48",
+        "name": "_windowsCount",
+        "type": "uint48"
+      }
+    ],
+    "name": "initializePriceImpact",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_openInterestUsd",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_pairIndex",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "_long",
+        "type": "bool"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_addTs",
+        "type": "uint256"
+      }
+    ],
+    "name": "removePriceImpactOpenInterest",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "_indices",
+        "type": "uint256[]"
+      },
+      {
+        "internalType": "uint128[]",
+        "name": "_depthsAboveUsd",
+        "type": "uint128[]"
+      },
+      {
+        "internalType": "uint128[]",
+        "name": "_depthsBelowUsd",
+        "type": "uint128[]"
+      }
+    ],
+    "name": "setPairDepths",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint48",
+        "name": "_newWindowsCount",
+        "type": "uint48"
+      }
+    ],
+    "name": "setPriceImpactWindowsCount",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint48",
+        "name": "_newWindowsDuration",
+        "type": "uint48"
+      }
+    ],
+    "name": "setPriceImpactWindowsDuration",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address[]",
+        "name": "_accounts",
+        "type": "address[]"
+      },
+      {
+        "internalType": "enum IAddressStoreUtils.Role[]",
+        "name": "_roles",
+        "type": "uint8[]"
+      },
+      {
+        "internalType": "bool[]",
+        "name": "_values",
+        "type": "bool[]"
+      }
+    ],
+    "name": "setRoles",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]
