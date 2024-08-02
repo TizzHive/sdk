@@ -779,6 +779,11 @@
         "internalType": "contract IERC20",
         "name": "_baseAsset",
         "type": "address"
+      },
+      {
+        "internalType": "uint128",
+        "name": "_minStakeAmount",
+        "type": "uint128"
       }
     ],
     "name": "initialize",
@@ -807,6 +812,19 @@
         "internalType": "bool",
         "name": "",
         "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "minStakeAmount",
+    "outputs": [
+      {
+        "internalType": "uint128",
+        "name": "",
+        "type": "uint128"
       }
     ],
     "stateMutability": "view",

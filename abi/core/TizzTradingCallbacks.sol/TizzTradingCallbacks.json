@@ -547,6 +547,19 @@
       {
         "indexed": true,
         "internalType": "address",
+        "name": "tizzEscrow",
+        "type": "address"
+      }
+    ],
+    "name": "TizzEscrowUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
         "name": "trader",
         "type": "address"
       },
@@ -919,59 +932,6 @@
   {
     "inputs": [
       {
-        "internalType": "uint256",
-        "name": "initialPosToken",
-        "type": "uint256"
-      },
-      {
-        "internalType": "uint256",
-        "name": "leverage",
-        "type": "uint256"
-      }
-    ],
-    "name": "getLevPoseBaseAsset",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "address",
-        "name": "_trader",
-        "type": "address"
-      },
-      {
-        "internalType": "uint256",
-        "name": "_pairIndex",
-        "type": "uint256"
-      },
-      {
-        "internalType": "uint256",
-        "name": "_index",
-        "type": "uint256"
-      }
-    ],
-    "name": "getLevPoseBaseAsset",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
         "internalType": "address",
         "name": "trader",
         "type": "address"
@@ -1048,6 +1008,11 @@
       {
         "internalType": "contract ITizzStaking",
         "name": "_staking",
+        "type": "address"
+      },
+      {
+        "internalType": "contract ITizzEscrow",
+        "name": "_tizzEscrow",
         "type": "address"
       },
       {
@@ -1379,6 +1344,19 @@
   {
     "inputs": [
       {
+        "internalType": "contract ITizzEscrow",
+        "name": "_tizzEscrow",
+        "type": "address"
+      }
+    ],
+    "name": "setTizzEscrow",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
         "components": [
           {
             "internalType": "address",
@@ -1532,6 +1510,19 @@
     "outputs": [
       {
         "internalType": "contract ITizzTradingStorage",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "tizzEscrow",
+    "outputs": [
+      {
+        "internalType": "contract ITizzEscrow",
         "name": "",
         "type": "address"
       }
