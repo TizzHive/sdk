@@ -228,45 +228,6 @@
     "type": "function"
   },
   {
-    "inputs": [],
-    "name": "dev",
-    "outputs": [
-      {
-        "internalType": "address",
-        "name": "",
-        "type": "address"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "devFeesBaseAsset",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "devFeesToken",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
     "inputs": [
       {
         "internalType": "address",
@@ -357,11 +318,6 @@
             "type": "uint256"
           },
           {
-            "internalType": "uint256",
-            "name": "spreadReductionP",
-            "type": "uint256"
-          },
-          {
             "internalType": "bool",
             "name": "buy",
             "type": "bool"
@@ -396,11 +352,6 @@
               {
                 "internalType": "uint256",
                 "name": "block",
-                "type": "uint256"
-              },
-              {
-                "internalType": "uint256",
-                "name": "tokenId",
                 "type": "uint256"
               }
             ],
@@ -444,11 +395,6 @@
             "type": "uint256"
           },
           {
-            "internalType": "uint256",
-            "name": "spreadReductionP",
-            "type": "uint256"
-          },
-          {
             "internalType": "bool",
             "name": "buy",
             "type": "bool"
@@ -483,11 +429,6 @@
               {
                 "internalType": "uint256",
                 "name": "block",
-                "type": "uint256"
-              },
-              {
-                "internalType": "uint256",
-                "name": "tokenId",
                 "type": "uint256"
               }
             ],
@@ -531,32 +472,6 @@
         "internalType": "address",
         "name": "",
         "type": "address"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "govFeesBaseAsset",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "govFeesToken",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
       }
     ],
     "stateMutability": "view",
@@ -675,70 +590,6 @@
         "internalType": "uint256",
         "name": "",
         "type": "uint256"
-      }
-    ],
-    "name": "nftLastSuccess",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "nftRewards",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "nftSuccessTimelock",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "name": "nfts",
-    "outputs": [
-      {
-        "internalType": "address",
-        "name": "",
-        "type": "address"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
       },
       {
         "internalType": "uint256",
@@ -846,11 +697,6 @@
         "type": "uint256"
       },
       {
-        "internalType": "uint256",
-        "name": "spreadReductionP",
-        "type": "uint256"
-      },
-      {
         "internalType": "bool",
         "name": "buy",
         "type": "bool"
@@ -885,11 +731,6 @@
           {
             "internalType": "uint256",
             "name": "block",
-            "type": "uint256"
-          },
-          {
-            "internalType": "uint256",
-            "name": "tokenId",
             "type": "uint256"
           }
         ],
@@ -1045,11 +886,6 @@
     "outputs": [
       {
         "internalType": "uint256",
-        "name": "tokenId",
-        "type": "uint256"
-      },
-      {
-        "internalType": "uint256",
         "name": "tokenPriceBaseAsset",
         "type": "uint256"
       },
@@ -1163,19 +999,6 @@
         "internalType": "uint256",
         "name": "openCount",
         "type": "uint256"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "pool",
-    "outputs": [
-      {
-        "internalType": "address",
-        "name": "",
-        "type": "address"
       }
     ],
     "stateMutability": "view",
@@ -1329,25 +1152,6 @@
   {
     "inputs": [
       {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "name": "spreadReductionsP",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
         "components": [
           {
             "internalType": "address",
@@ -1367,11 +1171,6 @@
           {
             "internalType": "uint256",
             "name": "positionSize",
-            "type": "uint256"
-          },
-          {
-            "internalType": "uint256",
-            "name": "spreadReductionP",
             "type": "uint256"
           },
           {
@@ -1409,11 +1208,6 @@
               {
                 "internalType": "uint256",
                 "name": "block",
-                "type": "uint256"
-              },
-              {
-                "internalType": "uint256",
-                "name": "tokenId",
                 "type": "uint256"
               }
             ],
@@ -1495,11 +1289,6 @@
         "components": [
           {
             "internalType": "uint256",
-            "name": "tokenId",
-            "type": "uint256"
-          },
-          {
-            "internalType": "uint256",
             "name": "tokenPriceBaseAsset",
             "type": "uint256"
           },
@@ -1535,25 +1324,6 @@
     "type": "function"
   },
   {
-    "inputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "name": "supportedTokens",
-    "outputs": [
-      {
-        "internalType": "address",
-        "name": "",
-        "type": "address"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
     "inputs": [],
     "name": "token",
     "outputs": [
@@ -1574,45 +1344,6 @@
         "internalType": "uint256",
         "name": "",
         "type": "uint256"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "tokensBurned",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "tokensMinted",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "trading",
-    "outputs": [
-      {
-        "internalType": "address",
-        "name": "",
-        "type": "address"
       }
     ],
     "stateMutability": "view",
@@ -1718,11 +1449,6 @@
             "type": "uint256"
           },
           {
-            "internalType": "uint256",
-            "name": "spreadReductionP",
-            "type": "uint256"
-          },
-          {
             "internalType": "bool",
             "name": "buy",
             "type": "bool"
@@ -1757,11 +1483,6 @@
               {
                 "internalType": "uint256",
                 "name": "block",
-                "type": "uint256"
-              },
-              {
-                "internalType": "uint256",
-                "name": "tokenId",
                 "type": "uint256"
               }
             ],

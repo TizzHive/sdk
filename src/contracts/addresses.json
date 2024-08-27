@@ -40,41 +40,41 @@
   },
   "421614": {
     "global": {
-      "tizzMultiCollatDiamond": "0x998590d04bE092C0c35EA16f408637194D3fdFaC",
+      "tizzMultiCollatDiamond": "0x48e8789B4Ab48bbF13e47762A4eF89b37E388840",
       "customMulticall": "0xcA11bde05977b3631167028862bE2a173976CA11"
     },
     "USDT": {
-      "tizzTokenOpenPnlFeed": "0x36372da57415d625296d42ecF1D0Dd319417A7a7",
-      "tizzBorrowingFees": "0xA4cB790e6B43635EB4BD9E28ab47E4feB95A079d",
-      "tizzTrading": "0xc2598250F82e51e4eA7349d2513c423E89566D5c",
-      "tizzTradingStorage": "0x60446c8BD490955B7DC42c963A6279403b790f8A",
-      "tizzTradingCallbacks": "0x07c1a889e0b1b494a6d0efc75446Ca7Af1F55b0C",
-      "tizzToken": "0x68aF19a445a2fdC6fc5a5fC710bAEd1027C1f01F",
-      "tizzFundingRate": "0xA4cB790e6B43635EB4BD9E28ab47E4feB95A079d",
+      "tizzTokenOpenPnlFeed": "0xCDcf87F92b66BE6c966d0471B58A25E1e93F2c20",
+      "tizzBorrowingFees": "0x395a106E4D9651c4FE1e3f276E7eb00E06f3C20f",
+      "tizzTrading": "0x79B875d2E78AaE8238ADB57BC12F7346a41e8b8a",
+      "tizzTradingStorage": "0x5A39d191C68f60a9ebFe1421636192D6a860e7F2",
+      "tizzTradingCallbacks": "0x3d74529C1A0F1ff150A1D0B29f8Aa19Fa965BD2E",
+      "tizzToken": "0xca4bFCCd66e8A5eEfCF37a9949F87f9e7Ca7bef0",
+      "tizzFundingRate": "0x395a106E4D9651c4FE1e3f276E7eb00E06f3C20f",
       "tizzBaseToken": "0x1CFEA7ecB518B3e4C5f72f11bc0F8E75A070A5C0",
-      "tizzFrontendInfoAggregator": "0xC11Be024Ae7869C70471A6732441203CDc479B3A"
+      "tizzFrontendInfoAggregator": "0x92AED73db1a0Cea581ECbd83984cac0f2DD94a4F"
     },
     "WBTC": {
-      "tizzTokenOpenPnlFeed": "0x37321182f43862E127C2F80032b3B3A65acf688C",
-      "tizzBorrowingFees": "0x9826B9B3a216071fC733598a3a7171e5173891Ad",
-      "tizzTrading": "0xf7FF20902D16f007f831852BBE58FeeD86310D99",
-      "tizzTradingStorage": "0x1289844EcD4cA631a0918c505a5BcBfCd6473D67",
-      "tizzTradingCallbacks": "0xd8eF23e2B87E5f83dBfDdA89103f8e44F7e96890",
-      "tizzToken": "0x27a109D4103a5A13a17b9F6DCF427Bb9bC46Ca5d",
-      "tizzFundingRate": "0x9826B9B3a216071fC733598a3a7171e5173891Ad",
+      "tizzTokenOpenPnlFeed": "0xfC8Ef7984a14B81b425c9279f0aBEf9011E50d6a",
+      "tizzBorrowingFees": "0x48eBABE3b1690114fE6AF85ba46339EAe76Bd76f",
+      "tizzTrading": "0x33Ea101c69FA7442b58D4749CE6019C46936b913",
+      "tizzTradingStorage": "0x31CB8077fd141DFF5c93EBC3d4516dcA8e14D3aB",
+      "tizzTradingCallbacks": "0xa962f46129556Bcd70ec8E6eCa878FC43Dbf17f1",
+      "tizzToken": "0x40c53Fa4AC0d5BAD07990216a63aC2496357951F",
+      "tizzFundingRate": "0x48eBABE3b1690114fE6AF85ba46339EAe76Bd76f",
       "tizzBaseToken": "0xD98A3871421c4daC2F6eea03536326f2279D0Bd2",
-      "tizzFrontendInfoAggregator": "0x712ada3E0b48BdcDDb4B8eE172c364E322a32a71"
+      "tizzFrontendInfoAggregator": "0x7A7abbd92Ee175DbfedA4847CCe8C2E630174f5B"
     },
     "BTC": {
-      "tizzTokenOpenPnlFeed": "0xADf35dd657079A8eFf2D1d98C37C03eB34D37E87",
-      "tizzBorrowingFees": "0xB0b9a6750939481Bf85Eae2811e788BCB15f946f",
-      "tizzTrading": "0x8ff9CF99eBe9dfa3Ea26DFfc68c08F6ec5973Ad9",
-      "tizzTradingStorage": "0xD827bEe247245f81F3780485C5604b61C5e2DdFe",
-      "tizzTradingCallbacks": "0x91F6f12BD2398D6f9D9ab9fC33b91D604441E8f2",
-      "tizzToken": "0x64767a1186F0b1b0AEA7010403a7C240929f32c4",
-      "tizzFundingRate": "0xB0b9a6750939481Bf85Eae2811e788BCB15f946f",
+      "tizzTokenOpenPnlFeed": "0x0AB4bEc39BD41218Bb2eAbec154E54444665be12",
+      "tizzBorrowingFees": "0x23Caa54ea0D2BeDaec1faaFF508c0bf635d35Ff1",
+      "tizzTrading": "0x3Dd852df25eA820C8c917d98D9Aa6a4af40296A4",
+      "tizzTradingStorage": "0xcb3eb5D86b3062aF8B81255E5D52498d7864bF4d",
+      "tizzTradingCallbacks": "0xAfb1CF55099A8Bcde1932edC9290A773E36a0A3f",
+      "tizzToken": "0x573ee11969F2d1A3FfDff20a80aB0336A9f290fe",
+      "tizzFundingRate": "0x23Caa54ea0D2BeDaec1faaFF508c0bf635d35Ff1",
       "tizzBaseToken": "0x980B62Da83eFf3D4576C647993b0c1D7faf17c73",
-      "tizzFrontendInfoAggregator": "0x2934F693A897E1637cA7Cfc58AD2AcF5A48B92B4"
+      "tizzFrontendInfoAggregator": "0x55831b3252083c0Fad3E80c58Aa29C3eA6F027f7"
     }
   }
 }

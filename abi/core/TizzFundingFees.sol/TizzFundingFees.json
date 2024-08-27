@@ -469,11 +469,6 @@
           },
           {
             "internalType": "uint256",
-            "name": "lastAccBlockWeightedMarketCap",
-            "type": "uint256"
-          },
-          {
-            "internalType": "uint256",
             "name": "fundingFees",
             "type": "uint256"
           },
@@ -612,11 +607,6 @@
             "internalType": "uint80",
             "name": "maxOi",
             "type": "uint80"
-          },
-          {
-            "internalType": "uint256",
-            "name": "lastAccBlockWeightedMarketCap",
-            "type": "uint256"
           }
         ],
         "internalType": "struct ITizzFundingFees.Group",
@@ -741,11 +731,6 @@
             "internalType": "uint80",
             "name": "maxOi",
             "type": "uint80"
-          },
-          {
-            "internalType": "uint256",
-            "name": "lastAccBlockWeightedMarketCap",
-            "type": "uint256"
           }
         ],
         "internalType": "struct ITizzFundingFees.Group[]",
@@ -849,11 +834,6 @@
             "internalType": "uint48",
             "name": "feeExponent",
             "type": "uint48"
-          },
-          {
-            "internalType": "uint256",
-            "name": "lastAccBlockWeightedMarketCap",
-            "type": "uint256"
           },
           {
             "internalType": "uint256",
@@ -1189,11 +1169,6 @@
         "type": "tuple"
       },
       {
-        "internalType": "uint256",
-        "name": "fundingFees",
-        "type": "uint256"
-      },
-      {
         "internalType": "bool",
         "name": "isBullish",
         "type": "bool"
@@ -1390,11 +1365,6 @@
         "internalType": "uint80",
         "name": "maxOi",
         "type": "uint80"
-      },
-      {
-        "internalType": "uint256",
-        "name": "lastAccBlockWeightedMarketCap",
-        "type": "uint256"
       }
     ],
     "stateMutability": "view",
@@ -1532,19 +1502,6 @@
     "type": "function"
   },
   {
-    "inputs": [],
-    "name": "pairInfos",
-    "outputs": [
-      {
-        "internalType": "address",
-        "name": "",
-        "type": "address"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
     "inputs": [
       {
         "internalType": "uint256",
@@ -1615,11 +1572,6 @@
       },
       {
         "internalType": "uint256",
-        "name": "lastAccBlockWeightedMarketCap",
-        "type": "uint256"
-      },
-      {
-        "internalType": "uint256",
         "name": "fundingFees",
         "type": "uint256"
       },
@@ -1632,40 +1584,6 @@
         "internalType": "bool",
         "name": "isBullish",
         "type": "bool"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "uint256",
-        "name": "_pairIndex",
-        "type": "uint256"
-      },
-      {
-        "internalType": "uint256",
-        "name": "_collateral",
-        "type": "uint256"
-      },
-      {
-        "internalType": "uint256",
-        "name": "_leverage",
-        "type": "uint256"
-      },
-      {
-        "internalType": "bool",
-        "name": "_long",
-        "type": "bool"
-      }
-    ],
-    "name": "predictTradeFundingFee",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "fee",
-        "type": "uint256"
       }
     ],
     "stateMutability": "view",

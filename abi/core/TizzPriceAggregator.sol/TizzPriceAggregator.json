@@ -438,11 +438,6 @@
             "internalType": "uint256",
             "name": "spreadReductionP",
             "type": "uint256"
-          },
-          {
-            "internalType": "uint256",
-            "name": "tokenId",
-            "type": "uint256"
           }
         ],
         "internalType": "struct ITizzTradingStorage.PendingMarketOrder",
