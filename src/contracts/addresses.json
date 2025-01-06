@@ -76,5 +76,44 @@
       "tizzBaseToken": "0x980B62Da83eFf3D4576C647993b0c1D7faf17c73",
       "tizzFrontendInfoAggregator": "0x1C8628F48A48C74441E00EFe643C725A8958F420"
     }
+  },
+  "31611": {
+    "global": {
+      "tizzMultiCollatDiamond": "0x48e8789B4Ab48bbF13e47762A4eF89b37E388840",
+      "customMulticall": "0xcA11bde05977b3631167028862bE2a173976CA11"
+    },
+    "USDT": {
+      "tizzTokenOpenPnlFeed": "0xE1c001a49Dc92EBcdBa7f84D351b96c6511543b8",
+      "tizzBorrowingFees": "0x294866e76aFC332cAF133258B6Bcd69CB94b5af8",
+      "tizzTrading": "0x7c685BAbd22c8F3c3e7Eff20CB5597BfCE45D50C",
+      "tizzTradingStorage": "0x5850286E25A4F337447fb2e4C02f951732D37D38",
+      "tizzTradingCallbacks": "0xD154b1879ca8BbaC0208Ee9Af2eA95694b489B1C",
+      "tizzToken": "0xbAAC78399Ab894B50293d6EA4907C0367ee7868D",
+      "tizzFundingRate": "0x294866e76aFC332cAF133258B6Bcd69CB94b5af8",
+      "tizzBaseToken": "0x3A7536241Bd6aEcDFc40CE0F4F15F6F52Bb8976B",
+      "tizzFrontendInfoAggregator": "0x875D08ecA31330CC2e263661d0B2E9Bd733450a0"
+    },
+    "WBTC": {
+      "tizzTokenOpenPnlFeed": "0x41e8C384ceE3559E060389c05342AC6c19B80957",
+      "tizzBorrowingFees": "0xBf7C0B7D803D946F6e350f9e82B22F50e82f17B6",
+      "tizzTrading": "0xc6A67D59c5Dd9AeFbac34361D68F37206164B902",
+      "tizzTradingStorage": "0xA40082f3c2A4BEa7676210aC0C6a0b538A60239f",
+      "tizzTradingCallbacks": "0xf846C8DA617555a59485DA17AFA9eD19E6d92db0",
+      "tizzToken": "0x00FCaAC628C8dDC340C31cc5B782DfB59a6C09e7",
+      "tizzFundingRate": "0xBf7C0B7D803D946F6e350f9e82B22F50e82f17B6",
+      "tizzBaseToken": "0x6B796039A5D8C221D2Bf1740d56336198CF668b0",
+      "tizzFrontendInfoAggregator": "0x83Df3ecAfC2c7AaA395a66Ddf7404EC385954252"
+    },
+    "BTC": {
+      "tizzTokenOpenPnlFeed": "0x41e8C384ceE3559E060389c05342AC6c19B80957",
+      "tizzBorrowingFees": "0xBf7C0B7D803D946F6e350f9e82B22F50e82f17B6",
+      "tizzTrading": "0xc6A67D59c5Dd9AeFbac34361D68F37206164B902",
+      "tizzTradingStorage": "0xA40082f3c2A4BEa7676210aC0C6a0b538A60239f",
+      "tizzTradingCallbacks": "0xf846C8DA617555a59485DA17AFA9eD19E6d92db0",
+      "tizzToken": "0x00FCaAC628C8dDC340C31cc5B782DfB59a6C09e7",
+      "tizzFundingRate": "0xBf7C0B7D803D946F6e350f9e82B22F50e82f17B6",
+      "tizzBaseToken": "0x6B796039A5D8C221D2Bf1740d56336198CF668b0",
+      "tizzFrontendInfoAggregator": "0x83Df3ecAfC2c7AaA395a66Ddf7404EC385954252"
+    }
   }
 }

@@ -26,3 +26,10 @@ export const ABIS = {
   TOKEN: TizzTokenABI,
   FUNDING_RATE: TizzFundingRateABI,
 };
+
+export const CHAIN_IDS = {
+  BOTANIX_TEST: 3636,
+  BOTANIX: 3637,
+  ARB_SEPOLIA: 421614,
+  MEZO: 31611,
+};
